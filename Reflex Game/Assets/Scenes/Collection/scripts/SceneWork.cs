@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 public class SceneWork : MonoBehaviour
 {
     [Header("Номер сцены для перехода")]
+    
     public int sceneNumber;
     public void Transition()
     {
-        SceneManager.LoadScene(sceneNumber);
+            SceneManager.LoadScene(sceneNumber);  
     }
 }
