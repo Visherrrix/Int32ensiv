@@ -5,7 +5,7 @@ using UnityEngine;
 public class Moving : MonoBehaviour
 {
     bool move;
-    Vector3 mousePos;
+    Vector2 mousePos;
     float startPosX;
     float startPosY;
     //Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -20,7 +20,7 @@ public class Moving : MonoBehaviour
 
         if (((Mathf.Abs(this.transform.localPosition.x - form1.transform.localPosition.x))<=5 && (Mathf.Abs(this.transform.localPosition.y - form1.transform.localPosition.y)) <= 5 ))
         { 
-            this.transform.position = new Vector3(form1.transform.position.x, form1.transform.position.y);
+            this.transform.position = new Vector2(form1.transform.position.x, form1.transform.position.y);
 
             finish = true;
         }

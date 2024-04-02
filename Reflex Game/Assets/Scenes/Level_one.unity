@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 26897428}
   - component: {fileID: 26897427}
   - component: {fileID: 26897426}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Slot_One
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -674,7 +674,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483621815}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 396.71933}
+  m_LocalPosition: {x: 0, y: 0, z: 396.7193}
   m_LocalScale: {x: 2.7802174, y: 4.96078, z: 5.059996}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1226,7 +1226,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818374102}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 396.71933}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.7802174, y: 4.96078, z: 5.059996}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1234,7 +1234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.71, y: -16.422}
+  m_AnchoredPosition: {x: -14.57, y: -7.2}
   m_SizeDelta: {x: 1.4479, y: 1.8757}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &818374104
@@ -1361,7 +1361,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936291931}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 396.71933}
+  m_LocalPosition: {x: 0, y: 0, z: 396.7193}
   m_LocalScale: {x: 2.7802174, y: 4.96078, z: 5.059996}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2085,7 +2085,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1546664640}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 396.71933}
+  m_LocalPosition: {x: 0, y: 0, z: 396.7193}
   m_LocalScale: {x: 2.7802174, y: 4.96078, z: 5.059996}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2711,7 +2711,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831076040}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 396.71933}
+  m_LocalPosition: {x: 0, y: 0, z: 396.7193}
   m_LocalScale: {x: 2.7802174, y: 4.96078, z: 5.059996}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3088,12 +3088,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
