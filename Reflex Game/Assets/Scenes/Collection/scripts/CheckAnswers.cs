@@ -7,6 +7,7 @@ public class CheckAnswers : MonoBehaviour
 {
     public void CheckAns()
     {
+        Debug.Log(ItemSlot.Checker);
         if (ItemSlot.Checker)
         {
             ButtonClickWin(gameObject);
@@ -18,12 +19,10 @@ public class CheckAnswers : MonoBehaviour
     }
     public void ButtonClickWin(GameObject objWin)
     {
-        
         if (ItemSlot.Checker)
         {
             objWin.SetActive(true);
         }
-        ItemSlot.Checker = false;
     }
     public void ButtonClickFail(GameObject objFail)
     {
