@@ -25,11 +25,15 @@ public class ItemSlot : MonoBehaviour, IDropHandler
                     if (k == 1)
                     {
                         Checker = true;
+                        
+                        
                         Debug.Log(k);
                     }
+                    Checker = true;//Эта строчка частично решает баг
                     k = k + 1;
                     Debug.Log(k);
                 }
+                Checker = true; //Эта строчка частично решает баг
                 
             }
             else

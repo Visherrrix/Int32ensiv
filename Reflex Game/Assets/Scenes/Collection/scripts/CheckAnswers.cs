@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine.EventSystems;
 
 public class CheckAnswers : MonoBehaviour
 {
+    
     public void CheckAns()
     {
         Debug.Log(ItemSlot.Checker);
@@ -22,6 +24,8 @@ public class CheckAnswers : MonoBehaviour
         if (ItemSlot.Checker)
         {
             objWin.SetActive(true);
+            ManMono.ArrGal[SceneMemory.GetPreviousSceneIndex()] = true;
+            ManMono.hf = true;
         }
     }
     public void ButtonClickFail(GameObject objFail)
@@ -32,4 +36,5 @@ public class CheckAnswers : MonoBehaviour
             objFail.SetActive(true);
         }
     }
+    
 }
