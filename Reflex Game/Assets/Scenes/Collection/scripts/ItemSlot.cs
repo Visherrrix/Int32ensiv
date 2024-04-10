@@ -7,7 +7,7 @@ public class ItemSlot : MonoBehaviour, IDropHandler
 {
    public static bool Checker = false;
    public int SlotID;
-   static private int k { get; set; }
+   static public int k { get; set; }
    static private int id { get; set; }
     public void OnDrop(PointerEventData eventData)
     {
@@ -29,11 +29,11 @@ public class ItemSlot : MonoBehaviour, IDropHandler
                         
                         Debug.Log(k);
                     }
-                    Checker = true;//Эта строчка частично решает баг
+                    //Checker = true;//Эта строчка частично решает баг
                     k = k + 1;
                     Debug.Log(k);
                 }
-                Checker = true; //Эта строчка частично решает баг
+                //Checker = true; //Эта строчка частично решает баг
                 
             }
             else
@@ -43,5 +43,13 @@ public class ItemSlot : MonoBehaviour, IDropHandler
             }
             Debug.Log(Checker);
         }
+        //else
+        //{
+        //    if (card.CardID == SlotID && SlotID != 0)
+        //    {
+        //        k = k - 1;
+        //        Checker = false;
+        //    }
+        //}
     }
 }

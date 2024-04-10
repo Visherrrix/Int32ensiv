@@ -9,6 +9,8 @@ public class LevelManager : MonoBehaviour
     public Text loadingText;
     public void LoadLevel(string levelName)
     {
+        ItemSlot.k = 0;
+        ItemSlot.Checker = false;
         StartCoroutine(LoadSceneAsync(levelName));
     }
     IEnumerator LoadSceneAsync(string levelName)
