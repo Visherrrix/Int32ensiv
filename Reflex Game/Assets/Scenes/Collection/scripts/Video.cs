@@ -2,29 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
-public class Video : MonoBehaviour
+public class VideoPlayerController : MonoBehaviour
 {
-    public GameObject MenuPause;
-    public float t = 150;
+    public VideoPlayer videoPlayer;
+    
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        videoPlayer.loopPointReached += EndReached;
     }
 
-    // Update is called once per frame
-    void Update()
+    void EndReached(VideoPlayer vp)
     {
-        if (MenuPause.isStatic == true)
-        {
+        StartCoroutine(LoadSceneAfterVideo());
+    }
 
-        }
-        if (MenuPause.isStatic == false) { t -= 1 * Time.deltaTime; }
-        if (t < 0)
-        {
-            SceneManager.LoadScene(0);
-        }
+    IEnumerator LoadSceneAfterVideo()
+    {
+        yield return new WaitForSeconds(1/2); // ∆дем 1 секунду перед загрузкой сцены
+        SceneManager.LoadScene(1);
+    }
+
+    public void PauseVideo()
+    {
+        videoPlayer.Pause();
+    }
+
+    public void PlayVideo()
+    {
+        videoPlayer.Play();
     }
 }
