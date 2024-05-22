@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class SceneMemory : MonoBehaviour
 {
     private static int previousSceneIndex;
-
     void Start()
     {
         // Запоминаем индекс текущей сцены при старте игры
